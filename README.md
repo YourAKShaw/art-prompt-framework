@@ -2,15 +2,16 @@
 
 # 🎨 ART Prompt Framework
 
-**A systematic framework and Claude skill for engineering high-precision, production-grade AI prompts.**
+**🚀 Stop prompting like it's 2023!** A systematic framework and agent skill for engineering sharp, reliable AI prompts.
 
-Transform vague, one-liner requests into structured, deterministic, and context-rich prompts that unlock the full reasoning potential of modern LLMs.
+Turn vague one-liners into structured, context-rich prompts that get the best out of modern LLMs. Drop it in, say *"make this a prompt,"* and watch the magic happen 🪄🔥
 
 ---
 
 [![GitHub Tag](https://img.shields.io/github/v/tag/YourAKShaw/art-prompt-framework?label=version&style=for-the-badge&logo=git&color=2563EB)](https://github.com/YourAKShaw/art-prompt-framework/tags)
 [![License: MIT](https://img.shields.io/badge/License-MIT-10B981?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](LICENSE)
 [![Claude Skill Ready](https://img.shields.io/badge/Claude-Skill%20Ready-7C3AED?style=for-the-badge&logo=anthropic&logoColor=white)](https://claude.ai)
+[![Agent Skills](https://img.shields.io/badge/Agent-Skills-F97316?style=for-the-badge&logo=githubcopilot&logoColor=white)](https://skills.sh)
 [![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-059669?style=for-the-badge&logo=github)](https://github.com/YourAKShaw/art-prompt-framework/pulls)
 [![GitHub Stars](https://img.shields.io/github/stars/YourAKShaw/art-prompt-framework?style=for-the-badge&logo=github&color=F59E0B)](https://github.com/YourAKShaw/art-prompt-framework/stargazers)
 [![Issues](https://img.shields.io/github/issues/YourAKShaw/art-prompt-framework?style=for-the-badge&logo=github&color=EF4444)](https://github.com/YourAKShaw/art-prompt-framework/issues)
@@ -21,28 +22,28 @@ Transform vague, one-liner requests into structured, deterministic, and context-
 
 ## ⚡ Overview
 
-Most prompt degradation stems from three missing elements: **unclear expertise**, **vague objectives**, and **absent constraints**. The **ART Framework** resolves this by enforcing a battle-tested tripartite architecture on every generated or refactored prompt:
+Most prompt failures come from three missing ingredients: **unclear expertise**, **vague objectives**, and **absent constraints**. The **ART Framework** fixes all three with a simple tripartite structure applied to every prompt it writes or refactors:
 
-| Component | Focus | Description |
+| Component | Focus | What it does |
 | :--- | :--- | :--- |
-| 🎭 **A — Act As** | **Persona & Expertise** | Calibrates the AI's perspective, seniority, domain authority, and cognitive standard. Replaces generic "expert" labels with nuanced professional identities. |
-| 🎯 **R — Request** | **Mission & Context** | Defines the core deliverable, input data, background materials, target audience, and precise scope of work. |
-| ⚖️ **T — Terms** | **Rules & Guardrails** | Establishes non-negotiable boundaries, formatting requirements, anti-hallucination guardrails, prohibited elements, and tonal guidelines. |
+| 🎭 **A: Act As** | **Persona & Expertise** | Sets the AI's perspective, seniority, and domain authority. Replaces generic "expert" labels with a specific professional identity. |
+| 🎯 **R: Request** | **Mission & Context** | Defines the deliverable, the inputs, the audience, and what is out of scope. |
+| ⚖️ **T: Terms** | **Rules & Guardrails** | Sets the boundaries: format, length, tone, sources, and things to avoid. |
 
 ---
 
 ## 💡 Why ART?
 
-- 🎯 **Eliminates Hallucination & Drift**: Explicit terms and strict negative constraints keep the model tethered to verifiable truth.
-- ⚡ **Zero-Friction Reusability**: Outputs self-contained, copy-paste-ready prompt blocks that operate seamlessly in any fresh session.
-- 🧩 **Model Agnostic**: Engineered natively as a Claude skill, but generates prompts equally powerful across Claude 3.5/3.7, GPT-4o, Gemini 2.5, or local open-weights models.
-- 🔬 **Systematic Quality**: Replaces trial-and-error prompting with a disciplined, reproducible engineering structure.
+- 🎯 **Fewer invented facts**: Explicit terms and negative constraints keep the output anchored to what you actually gave it.
+- ⚡ **Copy-paste ready**: Every output is a self-contained block that works in a brand-new chat.
+- 🧩 **Works beyond Claude**: The skill is a single `SKILL.md` file. The prompts it writes are plain text, so they run in any LLM.
+- 🔬 **Repeatable results**: Replaces trial-and-error prompting with a structure you can reuse and improve.
 
 ---
 
 ## 🔍 The Anatomy of an ART Prompt
 
-Here is how a conversational, one-line request is elevated into an actionable ART prompt:
+Here is how a one-line request becomes an actionable ART prompt:
 
 ### ❌ The Rough Input
 > *"Help me write a cold email to a SaaS founder."*
@@ -50,59 +51,72 @@ Here is how a conversational, one-line request is elevated into an actionable AR
 ### ✅ The Generated ART Prompt
 ```markdown
 ACT AS:
-A seasoned B2B enterprise sales copywriter who specializes in high-converting,
-low-friction outbound email campaigns for high-growth tech founders.
+A seasoned B2B sales copywriter who writes short, specific cold emails
+that busy SaaS founders actually read.
 
 REQUEST:
-Draft a 3-sentence cold outreach email introducing an automated API latency
-monitoring tool to a Bootstrapped SaaS Founder. Highlight immediate ROI: saving
-engineering on-call hours and preventing silent churn.
+Write one cold email to the founder of a 20-person B2B SaaS company that
+sells inventory software to small retailers. Goal: book a 15-minute call.
+Use only the company name and the founder's first name as placeholders.
 
 TERMS:
-1. Length: Exactly 75-100 words.
-2. Tone: Respectful, punchy, peer-to-peer; avoid corporate fluff, sycophancy,
-   and buzzwords ("synergy", "game-changer", "revolutionary").
+1. Length: 75 to 100 words.
+2. Tone: direct, peer-to-peer. No buzzwords, no exclamation marks,
+   no "I hope this finds you well."
 3. Structure:
-   - Line 1: Observation/context showing understanding of founder pain.
-   - Line 2: Value proposition with concrete metric.
-   - Line 3: Low-friction Call To Action (ask for thoughts, not a 30-min call).
-4. Do not include placeholder text that requires manual editing except for
-   [Recipient Name] and [Company Name].
+   - Line 1: one specific observation about the company (no generic praise).
+   - Line 2: the value, with one concrete benefit.
+   - Line 3: one low-friction call to action.
+4. Do not invent facts about the company. If something is unknown, leave it out.
 ```
 
 ---
 
 ## 📥 Installation
 
-You can install and use the **ART Prompt Framework** directly in your preferred Claude environment:
-
 ### 🛠️ Claude Code (Personal Skill)
 
-Clone this repository directly into your Claude personal skills directory:
+Clone the repository into your personal skills directory:
 
 ```bash
 git clone https://github.com/YourAKShaw/art-prompt-framework.git ~/.claude/skills/art-prompt-framework
 ```
 
+### 📦 Skills CLI (Other Agents)
+
+```bash
+npx skills add YourAKShaw/art-prompt-framework
+```
+
 ### 🌐 Claude.ai (Web App)
 
 1. Download this repository as a [ZIP archive](https://github.com/YourAKShaw/art-prompt-framework/archive/refs/heads/main.zip).
-2. Ensure `SKILL.md` is positioned at the root of the extracted folder.
-3. Upload the folder or zip file via **Claude Settings → Capabilities / Skills**.
+2. Make sure `SKILL.md` is at the root of the extracted folder.
+3. Upload the folder or ZIP via **Claude Settings → Capabilities / Skills**.
 
 ---
 
 ## 🚀 Usage
 
-Once installed, Claude automatically applies the framework whenever you want to engineer, optimize, or translate a prompt:
+Once installed, ask your agent to write, improve, or convert a prompt, or mention the ART framework by name:
 
-### Prompt Creation
+### ✍️ Prompt Creation
 > *"Write an ART prompt to help me build an automated financial reconciliation pipeline in Python."*
 
-### Prompt Refactoring
-> *"Turn this into a strong prompt using the ART framework: 'Create a system design document for a real-time chat application.' "*
+### 🔧 Prompt Refactoring
+> *"Turn this into a strong prompt using the ART framework: 'Create a system design document for a real-time chat application.'"*
 
-Claude outputs a clean, modular prompt formatted cleanly inside a code block ready to be copied into production or another chat session.
+The skill returns a clean, self-contained prompt in a code block, ready to paste into a new chat.
+
+---
+
+## 🧭 Compatibility
+
+| Environment | Status |
+| :--- | :--- |
+| 🛠️ Claude Code | ✅ Supported |
+| 🌐 Claude.ai | ✅ Supported |
+| 📦 Other agents (via Skills CLI) | 🧪 Check your agent's docs for where skills are loaded |
 
 ---
 
@@ -110,27 +124,28 @@ Claude outputs a clean, modular prompt formatted cleanly inside a code block rea
 
 ```text
 art-prompt-framework/
-├── 📜 SKILL.md      # Core framework logic, instructions, and conversion rules
-├── 📘 README.md     # Project documentation, guides, and specifications
+├── 📜 SKILL.md      # The skill: framework, conversion rules, output rules
+├── 📘 README.md     # Project documentation
 ├── ⚖️ LICENSE       # MIT License
-└── 🛡️ .gitignore   # Git repository ignores
+└── 🛡️ .gitignore   # Git ignore rules
 ```
 
 ---
 
 ## 🤝 Contributing
 
-Contributions, feedback, and prompt pattern enhancements are warmly welcomed!
+Contributions, feedback, and new prompt patterns are warmly welcomed! 🙌
 
-1. Fork the Project.
-2. Create your Feature Branch (`git checkout -b feature/new-prompt-pattern`).
-3. Commit your Changes (`git commit -m 'feat: add enhanced terms template'`).
-4. Push to the Branch (`git push origin feature/new-prompt-pattern`).
+1. Fork the project.
+2. Create your feature branch (`git checkout -b feature/new-prompt-pattern`).
+3. Commit your changes (`git commit -m 'feat: add new terms template'`).
+4. Push to the branch (`git push origin feature/new-prompt-pattern`).
 5. Open a Pull Request.
+
+For a large change to the framework itself, open an issue first so we can agree on the approach.
 
 ---
 
 ## 📜 License
 
 Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for full details.
-
