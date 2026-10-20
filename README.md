@@ -126,6 +126,7 @@ The skill returns a clean, self-contained prompt in a code block, ready to paste
 art-prompt-framework/
 ├── 📜 SKILL.md      # The skill: framework, conversion rules, output rules
 ├── 📘 README.md     # Project documentation
+├── 🔒 SECURITY.md   # Vulnerability reporting policy
 ├── ⚖️ LICENSE       # MIT License
 └── 🛡️ .gitignore   # Git ignore rules
 ```
@@ -143,6 +144,12 @@ Contributions, feedback, and new prompt patterns are warmly welcomed! 🙌
 5. Open a Pull Request.
 
 For a large change to the framework itself, open an issue first so we can agree on the approach.
+
+---
+
+## 🔒 Security
+
+Found a vulnerability? Please report it privately as described in [`SECURITY.md`](SECURITY.md) instead of opening a public issue.
 
 ---
 
