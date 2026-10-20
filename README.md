@@ -125,6 +125,7 @@ The skill returns a clean, self-contained prompt in a code block, ready to paste
 ```text
 art-prompt-framework/
 ├── 📜 SKILL.md      # The skill: framework, conversion rules, output rules
+├── ⚙️ .github/     # Commit message workflow and checker
 ├── 📘 README.md     # Project documentation
 ├── 🔒 SECURITY.md   # Vulnerability reporting policy
 ├── ⚖️ LICENSE       # MIT License
