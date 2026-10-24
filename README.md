@@ -2,6 +2,8 @@
 
 # 🎨 ART Prompt Framework
 
+[![HOL Guard](https://img.shields.io/endpoint?url=https%3A%2F%2Fhol.org%2Fapi%2Fregistry%2Fbadges%2Fplugin%3Fslug%3Dyourakshaw%252Fart-prompt-framework%26metric%3Drelease)](https://hol.org/registry/plugins/yourakshaw%2Fart-prompt-framework)
+
 **🚀 Stop prompting like it's 2023!** A systematic framework and agent skill for engineering sharp, reliable AI prompts.
 
 Turn vague one-liners into structured, context-rich prompts that get the best out of modern LLMs. Drop it in, say *"make this a prompt,"* and watch the magic happen 🪄🔥
