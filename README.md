@@ -2,6 +2,8 @@
 
 # 🎨 ART Prompt Framework
 
+[![AgentShield Security](https://merx.help/badge/A+.svg)](https://merx.help/shield)
+
 [![HOL Guard](https://img.shields.io/endpoint?url=https%3A%2F%2Fhol.org%2Fapi%2Fregistry%2Fbadges%2Fplugin%3Fslug%3Dyourakshaw%252Fart-prompt-framework%26metric%3Drelease)](https://hol.org/registry/plugins/yourakshaw%2Fart-prompt-framework)
 
 **🚀 Stop prompting like it's 2023!** A systematic framework and agent skill for engineering sharp, reliable AI prompts.
